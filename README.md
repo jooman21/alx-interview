@@ -1,12 +1,15 @@
-# Minimum Operations
+# Making Change
 
 This project contains interview coding challenges.
 
 ## Tasks To Complete
 
-+ [x] 0. **Minimum Operations**<br/>[0-minoperations.py](0-minoperations.py) contains a script that meets the following requirements:
-  + In a text file, there is a single character `H`. Your text editor can execute only two operations in this file: `Copy All` and `Paste`. Given a number `n`, write a method that calculates the fewest number of operations needed to result in exactly `n` `H` characters in the file.
-    + Prototype: `def minOperations(n)`.
-    + `boxes` is a list of lists.
-    + Returns an integer.
-    + If `n` is impossible to achieve, return `0`.# alx-interview
++ [x] 0. **Change comes from within**<br/>[0-making_change.py](0-making_change.py) contains a module with a function that determines the fewest number of coins needed to meet a given amount `total` when given a pile of coins of different values, with the following requirements:
+  + Prototype: `def makeChange(coins, total)`.
+  + Return: fewest number of coins needed to meet `total`.
+    + If `total` is `0` or less, return `0`.
+    + If `total` cannot be met by any number of coins you have, return `-1`.
+  + `coins` is a list of the values of the coins in your possession.
+  + The value of a coin will always be an integer greater than `0`.
+  + You can assume you have an infinite number of each denomination of coin in the list.
+  + Your solution’s runtime will be evaluated in this task.
